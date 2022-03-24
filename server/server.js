@@ -11,7 +11,7 @@ const corsOptions = {
 };
 const errorHandler = require('./middleware/error');
 dotenv.config({ path: './config/.env' });
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 const apiV4 = process.env.API_URL_V4
 const api = process.env.API_URL
 const apiV3 = process.env.API_URL_V3

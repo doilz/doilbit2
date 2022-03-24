@@ -2,8 +2,9 @@ import React from "react";
 import Nav from "../components/Nav";
 import BuyOrderForm from "../components/BuyOrderForm";
 import SellOrderform from "../components/SellOrderForm";
-import NewsFeed from "../components/NewsFeed";
+import Signup from "../components/Signup";
 import Bank from "../components/Bank";
+
 
 function Layout() {
     return (
@@ -15,6 +16,7 @@ function Layout() {
                 
             </div>
             <Bank />
+            <Signup />
         </div>
     )
 }

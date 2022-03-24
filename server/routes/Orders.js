@@ -6,4 +6,6 @@ router.post('/buy', orderController.buy);
 router.post('/sell', orderController.sell);
 router.post('/bank', orderController.bank);
 
+router.post('/signup', orderController.signup);
+
 module.exports = router;
