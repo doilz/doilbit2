@@ -8,15 +8,24 @@ import Bank from "../components/Bank";
 
 function Layout() {
     return (
-        <div>
-            <Nav />
-            <div class="relative top-80 justify-center flex flex-wrap">
-                <BuyOrderForm />
-                <SellOrderform />
-                
-            </div>
-            <Bank />
-            <Signup />
+        <div class="">
+            <header>
+                <Nav /> 
+            </header>
+                <body class="min-h-screen flex justify-center place-content-start place-item-start pt-16 ">
+                    <div class="container mx-auto">   
+                        <div class="grid grid-cols-3 md:grid-cols-3 gap-4 p-5 ">        
+                            <BuyOrderForm />
+                            <SellOrderform />
+                            <Bank />
+                           
+                        </div>
+                        <div class="col-span-1">
+                        <Signup />
+                        </div>
+                    </div>
+
+            </body>
         </div>
     )
 }

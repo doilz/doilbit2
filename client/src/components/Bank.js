@@ -31,8 +31,8 @@ function Bank() {
     }, [bankMoney]);
 
     return (
-        <div class="relative top-60 justify-center flex flex-wrap">
-            <div class="">
+
+            <div class="flex items-center justify-start">
                 <div class="bg-white rounded-lg shadow p-5">
                     <p class="text-gray-700 text-xl font-semibold">
                         <form class="" action="/exchange/bank" method="post">
@@ -40,12 +40,11 @@ function Bank() {
                             <button class="rounded-full py-2 px-3 bg-black text-white" onClick={handleSubmit}>입금</button>
                         </form>
                     </p>
-                    <p class="text-gray-700 text-xl font-semibold">
-                           잔고 :  {quantity}
-                    </p>
+                        <p class="text-gray-700 text-xl font-semibold">
+                            잔고 :  {quantity}
+                        </p>
                 </div>
             </div>
-        </div>
     )
 }
 

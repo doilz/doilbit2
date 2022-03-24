@@ -49,12 +49,14 @@ const Signup = () => {
 
 
     return (
-        <div class="fixed top-24 justify-center flex flex-wrap">
-          <div class="bg-white rounded-lg shadow p-5">
-          <h1 class="text-gray-700 text-xl font-semibold">Signup</h1>
+        <div class="">
+          <div class="bg-white rounded-lg shadow flex  justify-center">
+          
+
                 <div>
                     <form action="/signup" method="post">
                         <p class="text-gray-700 text-xl font-semibold">
+                        <h1>Signup</h1>
                             <label>Username: <input class="bg-green-400 text-black" type="text" name="userId" value={userId} onChange={handleChange}/></label>
                             <br></br>
                             <label>Password: <input class="bg-green-400 text-black" type="text" name="password" value={password} onChange={handleChange}/></label>

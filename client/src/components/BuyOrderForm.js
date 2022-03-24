@@ -35,8 +35,8 @@ function BuyOrderForm() {
     }, [buyOrder]);
 
     return (
-            <div class="relative top-60 flex flex-wrap justify-center">
-                <div class="">
+
+                <div class="flex items-center justify-center ">              
                     <div class="bg-white rounded-lg shadow p-5">
                         <p class="text-gray-700 text-xl font-semibold">
                             <form class=""action="/exchange/buy" method="post">
@@ -47,7 +47,7 @@ function BuyOrderForm() {
                         </p>
                     </div>
                 </div>
-            </div>
+            
     )
 }
 
