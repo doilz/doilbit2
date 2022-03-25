@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
+//입금
 function Bank() {
      // 임의의 유저아이디 -> 회원가입시 디비에 만들어짐
     const userId = "623943499d5531c4f1bcb8a8";
