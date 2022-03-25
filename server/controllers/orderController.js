@@ -35,21 +35,44 @@ exports.sell = (req, res, next) => {
         });
 }
 
-exports.bank = (req, res, next) => {
-    bank.create(req.body)
-        .then(order => {
+exports.deposit = (req, res, next) => {
+    bank.deposit(req.body.userId, req.body.quantity)
+        .then(quantity => {
             res.status(201).json({
                 status: 'success',
-                order
+                quantity
             });
-        })
+        }
+        )
         .catch(err => {
             res.status(400).json({
                 status: 'fail',
                 message: err
             });
-        });
+        }
+        );
 }
+
+exports.withdraw = (req, res, next) => {
+    bank.withdraw(req.body.userId, req.body.quantity)
+        .then(quantity => {
+            res.status(201).json({
+                status: 'success',
+                quantity
+            });
+        }
+        )
+        .catch(err => {
+            res.status(400).json({
+                status: 'fail',
+                message: err
+            });
+        }
+        );
+}
+
+
+
 
 exports.signup = (req, res, next) => {
     User.create(req.body)

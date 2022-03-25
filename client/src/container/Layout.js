@@ -4,7 +4,7 @@ import BuyOrderForm from "../components/BuyOrderForm";
 import SellOrderform from "../components/SellOrderForm";
 import Signup from "../components/Signup";
 import Bank from "../components/Bank";
-
+import Withdraw from "../components/Withdraw";
 
 function Layout() {
     return (
@@ -17,8 +17,8 @@ function Layout() {
                         <div class="grid grid-cols-3 md:grid-cols-3 gap-4 p-5 ">        
                             <BuyOrderForm />
                             <SellOrderform />
-                            <Bank />
-                           
+                            <Bank />       
+                            <Withdraw />
                         </div>
                         <div class="col-span-1">
                         <Signup />

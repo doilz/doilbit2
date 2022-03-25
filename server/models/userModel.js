@@ -35,6 +35,10 @@ const userSchema = new mongoose.Schema({
             },
             message: "비밀번호가 일치하지 않습니다."  
     },
+    balance: {
+        type: Number,
+        default: 0
+    },
     createdAt: {
         type: Date,
         default: Date.now
